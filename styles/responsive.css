@@ -1,6 +1,7 @@
 @media screen and (max-width: 1000px) {
     p {
-        font-size: .9rem;line-height: 1.8rem;
+        font-size: .9rem;
+        line-height: 1.8rem;
     }
 
     .grid-3 {
@@ -13,6 +14,7 @@
 }
 
 @media screen and (max-width: 825px) {
+
     /* burger */
     .burger {
         display: block;
@@ -43,17 +45,19 @@
         border-left: 1px solid var(--borderColor);
         z-index: 9;
         transform: translateX(100%);
-        transition: 0.3s ease-in-out;
+        transition: 0.2s ease-in-out;
     }
 
-    nav ul {
+    .nav ul {
         height: 100vh;
         align-items: center;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
+        padding-top: 6rem;
+        gap: 1.5rem;
     }
 
-    .nav-avtive {
+    .nav-active {
         transform: translateX(0);
     }
 
@@ -98,6 +102,12 @@
         margin-bottom: 0.5rem;
     }
 
+    .hero-left p {
+        margin: 0 auto;
+        max-width: 90%;
+        line-height: 1.6rem;
+    }
+
     /* skills section */
     .skills-grid {
         gap: 1rem;
@@ -110,6 +120,7 @@
 }
 
 @media screen and (max-width: 640px) {
+
     /* Titles */
     .section-title {
         font-size: 1.3rem;
@@ -117,5 +128,9 @@
 
     .pre-title {
         font-size: 0.7rem;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
     }
 }
